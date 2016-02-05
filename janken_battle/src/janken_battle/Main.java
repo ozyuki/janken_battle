@@ -193,7 +193,7 @@ public class Main {
     /**
      * 実行すると、じゃんけん大会の結果が標準出力されます。
      *
-     * @throws IOException
+     * @throws ClassNotFoundException, IllegalAccessException
      */
 
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException,
@@ -238,6 +238,7 @@ public class Main {
         System.out.println("");
     }
 
+    /** @noinspection ConstantConditions*/
     @SuppressWarnings("unchecked")
     private static List<Class<JankenPlayer>> getPlayers() throws ClassNotFoundException {
         List<Class<JankenPlayer>> players = new ArrayList<Class<JankenPlayer>>();
